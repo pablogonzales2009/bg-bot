@@ -19,6 +19,5 @@ async def on_ready():
     await channel.send(message) 
     while True: # very lazy solution to loop it forever
         time.sleep(100)
-        message = random_messages[random.randrange(0, len(random_messages))]
         await channel.send(message)
 client.run(TOKEN)
